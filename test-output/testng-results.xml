@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-06-19T21:31:34 EDT" name="Default suite" finished-at="2024-06-19T21:31:56 EDT" duration-ms="22227">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:ecommerceee.testrunner.EcommerceeeTestRunner@16eb3ea3]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2024-06-19T21:31:34 EDT" name="Default test" finished-at="2024-06-19T21:31:56 EDT" duration-ms="22227">
+      <class name="ecommerceee.testrunner.EcommerceeeTestRunner">
+        <test-method is-config="true" signature="EcommerceeeStartURL()[pri:0, instance:ecommerceee.testrunner.EcommerceeeTestRunner@16eb3ea3]" started-at="2024-06-19T21:31:34 EDT" name="EcommerceeeStartURL" finished-at="2024-06-19T21:31:36 EDT" duration-ms="2701" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EcommerceeeStartURL -->
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:ecommerceee.testrunner.EcommerceeeTestRunner@16eb3ea3]" started-at="2024-06-19T21:31:36 EDT" name="setUpClass" finished-at="2024-06-19T21:31:37 EDT" duration-ms="310" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@1f0b3cfe]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:ecommerceee.testrunner.EcommerceeeTestRunner@16eb3ea3]" started-at="2024-06-19T21:31:37 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-06-19T21:31:55 EDT" duration-ms="17863" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify user can delete item from cart successfully"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["This scenario is for verifying cart functionality"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [false] but found [true]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [false] but found [true]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertFalse(Assert.java:79)
+at org.testng.Assert.assertFalse(Assert.java:89)
+at ecommerceee.PageActions.EcommerceeeCartPageActions.verifydelete(EcommerceeeCartPageActions.java:34)
+at ecommerceeeStepDef.CartActivity.user_verifies_item_is_deleted_from_cart_successfully(CartActivity.java:36)
+at ✽.user verifies item is deleted from cart successfully(file:///C:/Users/kazir/eclipse-workspace/ecommerceee/src/test/resources/ecommerceeeAllFeatures/CartActivity.feature:21)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:ecommerceee.testrunner.EcommerceeeTestRunner@16eb3ea3]" started-at="2024-06-19T21:31:55 EDT" name="tearDownClass" finished-at="2024-06-19T21:31:55 EDT" duration-ms="728" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+        <test-method is-config="true" signature="EcommerceeeStopURL()[pri:0, instance:ecommerceee.testrunner.EcommerceeeTestRunner@16eb3ea3]" started-at="2024-06-19T21:31:55 EDT" name="EcommerceeeStopURL" finished-at="2024-06-19T21:31:56 EDT" duration-ms="536" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EcommerceeeStopURL -->
+      </class> <!-- ecommerceee.testrunner.EcommerceeeTestRunner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
