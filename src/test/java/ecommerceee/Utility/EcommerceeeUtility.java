@@ -12,6 +12,7 @@ public class EcommerceeeUtility extends EcommerceeeBase{
 
 public static long implicityWait=30;
 public static long pageLoadTimeOut=30;
+public static long example=30;
 	
 
 public static void takeMyScreenshot(WebDriver driver, String screenshot) {
